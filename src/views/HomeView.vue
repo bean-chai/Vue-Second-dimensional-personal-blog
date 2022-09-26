@@ -1,3 +1,23 @@
+<!--
+ * @Author: fengyuanyao fengyuanyao@fanyu.com
+ * @Date: 2022-09-26 08:29:56
+ * @LastEditors: fengyuanyao fengyuanyao@fanyu.com
+ * @LastEditTime: 2022-09-26 16:09:33
+ * @FilePath: \blog3.0\src\views\HomeView.vue
+ * @Description: 
+ * 
+ * Copyright (c) 2022 by error: git config user.name && git config user.email & please set dead value or install git, All Rights Reserved. 
+-->
+<!--
+ * @Author: fengyuanyao fengyuanyao@fanyu.com
+ * @Date: 2022-09-26 08:29:56
+ * @LastEditors: fengyuanyao fengyuanyao@fanyu.com
+ * @LastEditTime: 2022-09-26 11:17:59
+ * @FilePath: \blog3.0\src\views\HomeView.vue
+ * @Description: 
+ * 
+ * Copyright (c) 2022 by error: git config user.name && git config user.email & please set dead value or install git, All Rights Reserved. 
+-->
 <template>
   <div class="home">
     <div class="coverBox">
@@ -24,7 +44,7 @@
         <div class="textBox">百梦蠢狗(bushi</div>
       </div>
       <div class="footerBox">
-        &copy;2022 Chaichai<br />
+        &copy; 2022 Chaichai 版权所有<br />
         滇ICP备2022000365号
       </div>
     </div>
@@ -125,6 +145,7 @@ export default {
     width: 100%;
     height: 50px;
     bottom: 0;
+    background: rgba(255, 255, 255, 0);
     color: #fff;
     font-size: 18px;
     letter-spacing: 1px;

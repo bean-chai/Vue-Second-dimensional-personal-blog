@@ -37,16 +37,15 @@ export default {
 #app {
   position: relative;
   z-index: 0;
+  background: #f5f5f5;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
 }
-
 nav {
   padding: 30px;
-
   a {
     font-weight: bold;
     color: #2c3e50;
@@ -92,8 +91,12 @@ nav {
 /* 动画效果延迟秒数设置 */
 :root {
   /* 延迟X秒后执行 */
-  /* --animate-delay: 0.1s; */
+  /* --animate-delay: -2s; */
   /* 执行X秒 */
   /* --animate-duration: 0.2s; */
+  --animate-duration: 0.6s!important;
+    --animate-delay: 0.2s!important;
+    --animate-repeat: .8s!important;
 }
+
 </style>

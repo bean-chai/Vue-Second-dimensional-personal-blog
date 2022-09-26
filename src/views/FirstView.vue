@@ -1,7 +1,6 @@
 <template>
   <div class="aboutBox">
     <bannerView :imgUrl="this.img" :titleName="this.title"></bannerView>
-
     <div class="mainBox">
       <div class="contentBox">
         <div class="contentTitle">
@@ -18,12 +17,13 @@
             class="asidePic"
           ></el-avatar>
         </div>
-        <div class="asideTile">宜浪漫，忌平庸</div>
+        <div class="asideTile">私は僕がの神様です！</div>
+        <div class="asideTile1">わくわく！</div>
+        <el-divider style="width: 300px !important">数据统计</el-divider>
       </div>
-     <div v-if="btnFlag" class="go-top"  @click="backTop">
-     <img src="@/assets/backTop.png" alt="" class="backTopbtn">
-     </div>
-
+      <div v-if="btnFlag" class="go-top" @click="backTop">
+        <img src="@/assets/backTop.png" alt="" class="backTopbtn" />
+      </div>
     </div>
     <footerView></footerView>
   </div>
@@ -31,7 +31,7 @@
 
 <script>
 import bannerView from "@/components/bannerView/index";
-import footerView from '@/components/footerView/index.vue'
+import footerView from "@/components/footerView/index.vue";
 // md文件地址
 import markdown from "./test.md";
 // 代码高亮
@@ -39,63 +39,71 @@ import "highlight.js/styles/github.css";
 // 其他元素使用 github 的样式
 import "github-markdown-css";
 export default {
-  components: { bannerView, markdown,footerView },
-  mounted () {
-  window.addEventListener('scroll', this.scrollToTop)
-},
-destroyed () {
-  window.removeEventListener('scroll', this.scrollToTop)
-},
+  components: { bannerView, markdown, footerView },
+  mounted() {
+    window.addEventListener("scroll", this.scrollToTop);
+  },
+  destroyed() {
+    window.removeEventListener("scroll", this.scrollToTop);
+  },
   data() {
     return {
-      btnFlag:false,
+      btnFlag: false,
       img: "http://chaichaiimage.oss-cn-hangzhou.aliyuncs.com/blog3.0/bg16.jpg",
       title: "首页",
     };
   },
-  methods:{
-    backTop () {
-      const that = this
+  methods: {
+    backTop() {
+      const that = this;
       let timer = setInterval(() => {
-        let ispeed = Math.floor(-that.scrollTop / 5)
-        document.documentElement.scrollTop = document.body.scrollTop = that.scrollTop + ispeed
+        let ispeed = Math.floor(-that.scrollTop / 5);
+        document.documentElement.scrollTop = document.body.scrollTop =
+          that.scrollTop + ispeed;
         if (that.scrollTop === 0) {
-          clearInterval(timer)
+          clearInterval(timer);
         }
-      }, 16)
+      }, 16);
+    },
+
+    // 为了计算距离顶部的高度，当高度大于60显示回顶部图标，小于60则隐藏
+    scrollToTop() {
+      const that = this;
+      let scrollTop =
+        window.pageYOffset ||
+        document.documentElement.scrollTop ||
+        document.body.scrollTop;
+      that.scrollTop = scrollTop;
+      if (that.scrollTop - 600 > 0) {
+        that.btnFlag = true;
+      } else {
+        that.btnFlag = false;
+      }
+    },
   },
- 
-  // 为了计算距离顶部的高度，当高度大于60显示回顶部图标，小于60则隐藏
-  scrollToTop () {
-    const that = this
-    let scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
-    that.scrollTop = scrollTop
-    if (that.scrollTop-600 > 0) {
-      that.btnFlag = true
-    } else {
-      that.btnFlag = false
-    }
-  }
-  }
 };
 </script>
 
 <style <style lang="scss">
 .aboutBox {
   height: 100%;
+  // background-position: ;
+  background: url("@/assets/cover.jpg");
+  background-repeat: no-repeat;
+  background-size: 700px;
+  background-position: right bottom;
+  background-attachment: fixed;
+  border: 27;
   .mainBox {
     position: relative;
     width: 70%;
-    // height: 1000px;
-    // height: 100%;
     margin: 0 auto;
     margin-top: 10px;
-    // background: skyblue;
+
     .contentBox {
       width: 71%;
       background: #fff;
-      // background: pink;
-      border: 1px solid #ccc;
+      box-shadow: 0 1px 10px rgb(0 0 0 / 10%);
       text-align: left;
       padding: 0 20px;
       margin-bottom: 30px;
@@ -113,9 +121,9 @@ destroyed () {
         position: relative;
         width: 100%;
         height: 15vh;
-        background: url("http://chaichaiimage.oss-cn-hangzhou.aliyuncs.com/blog3.0/bg21.jpg");
+        background: url("http://chaichaiimage.oss-cn-hangzhou.aliyuncs.com/blog3.0/bg12.jpg");
         background-size: cover;
-        background-position: 0 -40px;
+        // background-position: 0 -40px;
         .asidePic {
           border: 4px solid rgb(241, 241, 241);
           position: absolute;
@@ -126,23 +134,33 @@ destroyed () {
         }
       }
       .asideTile {
+        padding: 0 20px;
         color: rgb(51, 51, 51);
         margin-top: 50px;
-        font-size: 18px;
+        font-size: 20px;
+        font-weight: 550;
+        letter-spacing: 3px;
+      }
+      .asideTile1 {
+        padding: 0 20px;
+        color: rgb(51, 51, 51);
+        // margin-top: 50px;
+        font-size: 20px;
+        font-weight: 550;
         letter-spacing: 3px;
       }
     }
   }
-  .go-top{
+  .go-top {
     position: fixed;
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background: url('@/assets/bg6.jpg');
+    background: url("@/assets/bg6.jpg");
     background-size: cover;
     bottom: 50px;
     right: 50px;
-    .backTopbtn{
+    .backTopbtn {
       margin: 10px auto;
     }
   }

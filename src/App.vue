@@ -37,7 +37,9 @@ export default {
 #app {
   position: relative;
   z-index: 0;
-  background: #f5f5f5;
+  // background: #f5f5f5;
+  overflow-x: hidden;
+  background: #fff;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -94,9 +96,8 @@ nav {
   /* --animate-delay: -2s; */
   /* 执行X秒 */
   /* --animate-duration: 0.2s; */
-  --animate-duration: 0.6s!important;
-    --animate-delay: 0.2s!important;
-    --animate-repeat: .8s!important;
+  --animate-duration: 0.6s !important;
+  --animate-delay: 0.2s !important;
+  --animate-repeat: 0.8s !important;
 }
-
 </style>

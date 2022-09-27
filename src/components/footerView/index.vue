@@ -1,3 +1,13 @@
+<!--
+ * @Author: chaichai chaichai@cute.com
+ * @Date: 2022-09-26 15:50:49
+ * @LastEditors: chaichai chaichai@cute.com
+ * @LastEditTime: 2022-09-27 16:26:13
+ * @FilePath: \blog3.0\src\components\footerView\index.vue
+ * @Description: 
+ * 
+ * Copyright (c) 2022 by CQUCC-4-433, All Rights Reserved. 
+-->
 <template>
   <div>
     <div class="footerBox">
@@ -29,7 +39,7 @@ export default {
   },
   methods: {
     getNowFormatDate() {
-      var t1 = new Date("2021/8/25 12:30:59");
+      var t1 = new Date("2021/8/25 4:30:59");
       var data = new Date(); //获取当前时间
       var times = t1.getTime() - data.getTime(); //时间差的毫秒数
       var days = parseInt(times / (24 * 1000 * 3600)); //计算相差的天数

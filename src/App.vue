@@ -1,3 +1,13 @@
+<!--
+ * @Author: chaichai chaichai@cute.com
+ * @Date: 2022-09-26 08:29:56
+ * @LastEditors: chaichai chaichai@cute.com
+ * @LastEditTime: 2022-09-27 16:25:33
+ * @FilePath: \blog3.0\src\App.vue
+ * @Description: 
+ * 
+ * Copyright (c) 2022 by CQUCC-4-433, All Rights Reserved. 
+-->
 <template>
   <div id="app">
     <!-- <HomeView v-if="home"></HomeView>
@@ -15,8 +25,8 @@
 </template>
 
 <script>
-import HomeView from "@/views/HomeView";
-import AboutView from "@/views/FirstView";
+import HomeView from "@/views/HomeView/HomeView.vue";
+import AboutView from "@/views/FirstView/FirstView.vue";
 export default {
   components: { HomeView, AboutView },
   data() {

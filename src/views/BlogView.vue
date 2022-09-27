@@ -1,3 +1,13 @@
+<!--
+ * @Author: chaichai chaichai@cute.com
+ * @Date: 2022-09-26 08:54:27
+ * @LastEditors: chaichai chaichai@cute.com
+ * @LastEditTime: 2022-09-27 16:25:29
+ * @FilePath: \blog3.0\src\views\BlogView.vue
+ * @Description: 
+ * 
+ * Copyright (c) 2022 by CQUCC-4-433, All Rights Reserved. 
+-->
 <template>
   <div class="blogBox">
   <bannerView :imgUrl="this.img" :titleName="this.title"></bannerView>

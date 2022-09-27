@@ -1,3 +1,13 @@
+<!--
+ * @Author: chaichai chaichai@cute.com
+ * @Date: 2022-09-26 08:42:49
+ * @LastEditors: chaichai chaichai@cute.com
+ * @LastEditTime: 2022-09-27 16:26:05
+ * @FilePath: \blog3.0\src\components\bannerView\index.vue
+ * @Description: 
+ * 
+ * Copyright (c) 2022 by CQUCC-4-433, All Rights Reserved. 
+-->
 <template>
   <div>
     <div

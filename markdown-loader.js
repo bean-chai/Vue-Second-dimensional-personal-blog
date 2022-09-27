@@ -1,13 +1,14 @@
 /*
- * @Author: fengyuanyao fengyuanyao@fanyu.com
+ * @Author: chaichai chaichai@cute.com
  * @Date: 2022-09-26 12:32:45
- * @LastEditors: fengyuanyao fengyuanyao@fanyu.com
- * @LastEditTime: 2022-09-26 12:33:02
+ * @LastEditors: chaichai chaichai@cute.com
+ * @LastEditTime: 2022-09-27 16:25:52
  * @FilePath: \blog3.0\markdown-loader.js
  * @Description: 
  * 
- * Copyright (c) 2022 by error: git config user.name && git config user.email & please set dead value or install git, All Rights Reserved. 
+ * Copyright (c) 2022 by CQUCC-4-433, All Rights Reserved. 
  */
+
 const HyperDown = require('hyperdown');
 
 const Prism = require('prismjs');

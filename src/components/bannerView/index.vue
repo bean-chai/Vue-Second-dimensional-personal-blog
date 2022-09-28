@@ -2,7 +2,7 @@
  * @Author: chaichai chaichai@cute.com
  * @Date: 2022-09-26 08:42:49
  * @LastEditors: chaichai chaichai@cute.com
- * @LastEditTime: 2022-09-27 16:26:05
+ * @LastEditTime: 2022-09-28 16:34:00
  * @FilePath: \blog3.0\src\components\bannerView\index.vue
  * @Description: 
  * 
@@ -52,17 +52,12 @@ export default {
   data() {
     return {
       activeIndex: "1",
-      //   url: imgUrl
     };
   },
   methods: {
     handleSelect(key, keyPath) {
       console.log(key, keyPath);
     },
-  },
-  mounted() {
-    // console.log(imgUrl);
-    // console.log(this.url);
   },
 };
 </script>
@@ -72,42 +67,31 @@ export default {
   width: 100vw;
   height: 100vh;
   background-size: cover;
-  // background: url("");
-  // background-position: 0 -200px;
   overflow: hidden;
 }
-
 .coverBox {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.4);
-
   .navBox {
     height: 60px;
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
-    padding: 10px 10px 0 10px;
-
+    padding: 15px 30px 0 30px;
     .topTitle {
       width: 300px;
       text-align: left;
-      // padding-left: 30px;
-      // padding-top: 30px;
       color: #fff;
       font-size: 38px;
       font-weight: 900;
-      //   letter-spacing: 1px;
       text-transform: uppercase;
     }
-
     .el-menu {
-      // width: 500px;
       height: 60px;
       background: rgb(0, 0, 0, 0);
       border: 0px;
     }
-
     .el-menu-item {
       color: #fff;
       font-size: 18px;
@@ -115,7 +99,6 @@ export default {
       background-color: rgb(0, 0, 0, 0) !important;
     }
   }
-
   .centerTile {
     width: 100%;
     line-height: 70vh;
@@ -123,13 +106,10 @@ export default {
     font-size: 38px;
     font-weight: 900;
     letter-spacing: 8px;
-    //   text-transform: uppercase;
   }
-
   .icon {
     margin-top: 30px;
     z-index: 99999;
-    //   width: 500px;
     font-weight: 900;
     font-size: 35px;
     color: #fff;

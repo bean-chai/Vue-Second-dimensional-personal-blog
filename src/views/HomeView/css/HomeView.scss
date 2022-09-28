@@ -1,0 +1,123 @@
+.home {
+  position: relative;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  // 背景图片
+  background: url("@/assets/bg3.jpg");
+  background-position: 0 0;
+  background-repeat: repeat-x;
+  // 动画详细 80s为动画执行一次的时间
+  animation: animatedBackground 80s linear infinite;
+  @keyframes animatedBackground {
+    0% {
+      background-position: 0% 49%;
+    }
+    50% {
+      background-position: 100% 49%;
+    }
+    100% {
+      background-position: 0% 49%;
+    }
+  }
+  .ahtuorName {
+    font-size: 30px;
+    margin-top: 15px;
+    letter-spacing: 10px;
+    font-weight: 550;
+  }
+  .coverBox {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+  }
+  .centerBox {
+    z-index: 99999;
+    position: absolute;
+    width: 900px;
+    height: 600px;
+    border-radius: 30px;
+    color: #fff;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    .str{
+        margin: 10px 0;
+    }
+    .title1 {
+      font-size: 30px;
+      letter-spacing: 3px;
+      //英文样式
+      text-transform: uppercase;
+      font-weight: 900;
+    }
+    .title2 {
+      margin: 10px 0;
+      font-size: 23px;
+      letter-spacing: 3px;
+      font-weight: 550;
+    }
+    .divider {
+      width: 70% !important;
+      margin:20px auto;
+    }
+    .btnBox {
+      width: 350px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 40px;
+      .btnStyle {
+        font-size: 18px;
+        font-weight: 550;
+        background: rgb(255, 255, 255, 0.3);
+        color: #fff;
+        letter-spacing: 3px;
+      }
+    }
+    .textBox {
+      font-size: 18px;
+      font-weight: 550;
+      letter-spacing: 2px;
+      color: rgb(220, 220, 220);
+      margin-top: 20px;
+      .go433 {
+        display: block;
+        color: rgb(220, 220, 220);
+        margin-top: 20px;
+      }
+    }
+  }
+  .footerBox {
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0);
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  .continueBox {
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    .logoimg {
+      cursor: pointer;
+      color: rgb(0, 0, 0);
+      font-size: 20px;
+      width: 40px;
+    }
+  }
+}
+.el-dialog__body {
+  margin: 0 auto;
+  text-align: center;
+  color: rgb(220, 220, 220);
+}
+.go433Img {
+  margin-top: 20px;
+}

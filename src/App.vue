@@ -2,7 +2,7 @@
  * @Author: chaichai chaichai@cute.com
  * @Date: 2022-09-26 08:29:56
  * @LastEditors: chaichai chaichai@cute.com
- * @LastEditTime: 2022-09-27 16:25:33
+ * @LastEditTime: 2022-09-28 08:46:17
  * @FilePath: \blog3.0\src\App.vue
  * @Description: 
  * 
@@ -17,9 +17,10 @@
       appear
       name="animate__animated animate__bounce"
       enter-active-class="animate__backInUp animate__slow"
-      leave-active-class="animate__fadeOutDownBig"
+      leave-active-class="animate__fadeOutDownBig contron"
     >
-      <router-view></router-view>
+    <!-- 解决抖动 -->
+      <router-view style="-webkit-backface-visibility: hidden;"></router-view>
     </transition>
   </div>
 </template>
@@ -43,11 +44,15 @@ export default {
   margin: 0;
   padding: 0;
   user-select: none;
+//  text-decoration: none;
+}
+//解决抖动
+.contron {
+  display:none
 }
 #app {
   position: relative;
   z-index: 0;
-  // background: #f5f5f5;
   overflow-x: hidden;
   background: #fff;
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -61,7 +66,6 @@ nav {
   a {
     font-weight: bold;
     color: #2c3e50;
-
     &.router-link-exact-active {
       color: #42b983;
     }
@@ -106,8 +110,8 @@ nav {
   /* --animate-delay: -2s; */
   /* 执行X秒 */
   /* --animate-duration: 0.2s; */
-  --animate-duration: 0.6s !important;
-  --animate-delay: 0.2s !important;
-  --animate-repeat: 0.8s !important;
+  --animate-duration: 0.5s !important;
+  --animate-delay: 0.5s !important;
+  --animate-repeat: 0.5s !important;
 }
 </style>

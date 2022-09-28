@@ -2,24 +2,30 @@
  * @Author: chaichai chaichai@cute.com
  * @Date: 2022-09-26 15:50:49
  * @LastEditors: chaichai chaichai@cute.com
- * @LastEditTime: 2022-09-27 16:26:13
+ * @LastEditTime: 2022-09-28 17:24:28
  * @FilePath: \blog3.0\src\components\footerView\index.vue
  * @Description: 
  * 
  * Copyright (c) 2022 by CQUCC-4-433, All Rights Reserved. 
 -->
 <template>
-  <div>
-    <div class="footerBox">
-      &copy; 2022 Chaichai 版权所有<br />
-      网站苟活 {{ day }}天 {{ h }}小时 {{ min }}分钟 {{ sec }}秒<br />
-      power by 🧡Chaichai🧡<br />
-      开源协议 MIT License <br />
-      滇ICP备2022000365号
+    <div>
+        <div class="footerBox">
+            <!-- 不蒜子年久失修，此功能已经无法正常运行（数据不显示或数据错误），目前暂无解决办法，需要此功能的同学自行编写后端~ 访问首页=>次数++ 即可 -->
+            浏览量：<span id="busuanzi_value_site_pv">114514</span>👀 | 访客数：<span
+                id="busuanzi_value_site_uv">233333</span>👦<br />
+            &copy; 2022 Chaichai 版权所有<br />
+            网站苟活 {{ day }}天 {{ h }}小时 {{ min }}分钟 {{ sec }}秒<br />
+            power by 🧡Chaichai🧡<br />
+            开源协议 MIT License <br />
+            滇ICP备2022000365号
+        </div>
     </div>
-  </div>
 </template>
 
+
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 <script>
 export default {
   name: "footerView",
@@ -28,6 +34,11 @@ export default {
     let myTimeDisplay = setInterval(() => {
       this.getNowFormatDate(); //每秒更新一次时间
     }, 1000);
+    console.log(busuanzi_value_site_pv);
+  },
+  destroyed() {
+    console.log(busuanzi_value_site_pv);
+
   },
   data() {
     return {
@@ -62,15 +73,15 @@ export default {
 
 <style>
 .footerBox {
-  position: relative;
-  width: 100%;
-  height: 90px;
-  padding-top: 7px;
-  background: #000;
-  bottom: 0;
-  color: #fff;
-  font-size: 13px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
+    position: relative;
+    width: 100%;
+    height: 90px;
+    padding-top: 7px;
+    background: #000;
+    bottom: 0;
+    color: #fff;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 </style>

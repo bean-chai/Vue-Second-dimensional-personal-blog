@@ -34,12 +34,12 @@
         </div>
         <div class="asideTile">柴柴</div>
         <div class="asideTile1">老爷保佑！前途无量！</div>
-        <el-divider>多开心一点啦</el-divider>
+        <el-divider>🌴</el-divider>
         <!-- 侧边栏底部图片 -->
         <img src="@/assets/huli.gif" alt="" class="bottomImg" />
       </div>
       <div v-if="btnFlag" class="go-top" @click="backTop">
-      <!-- 返回顶部图标 -->
+        <!-- 返回顶部图标 -->
         <img src="@/assets/backTop.png" alt="" class="backTopbtn" />
       </div>
     </div>
@@ -52,7 +52,7 @@ import bannerView from "@/components/bannerView/index";
 import footerView from "@/components/footerView/index.vue";
 // md文件地址
 import markdown from "../home.md";
-import './css/FirstView.scss'
+import "./css/FirstView.scss";
 import "highlight.js/styles/github.css";
 import "github-markdown-css";
 export default {
@@ -70,7 +70,7 @@ export default {
   data() {
     return {
       //侧边栏头像大小
-      size:90,
+      size: 90,
       bannerH: 0,
       locked: false,
       btnFlag: false,

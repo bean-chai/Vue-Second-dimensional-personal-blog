@@ -24,7 +24,7 @@ const routes = [
   {
     path: '/blog',
     name: 'blog',
-    component: () => import('../views/BlogView.vue'),
+    component: () => import('../views/BlogView/BlogView.vue'),
     meta: {
       title: '博客 | 技术宅-改变未来'
     }

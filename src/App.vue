@@ -19,8 +19,8 @@
       enter-active-class="animate__backInUp animate__slow"
       leave-active-class="animate__fadeOutDownBig contron"
     >
-    <!-- 解决抖动 -->
-      <router-view style="-webkit-backface-visibility: hidden;"></router-view>
+      <!-- 解决抖动 -->
+      <router-view style="-webkit-backface-visibility: hidden"></router-view>
     </transition>
   </div>
 </template>
@@ -44,13 +44,15 @@ export default {
   margin: 0;
   padding: 0;
   user-select: none;
-//  text-decoration: none;
+  //  text-decoration: none;
+  list-style: none;
 }
 //解决抖动
 .contron {
-  display:none
+  display: none;
 }
 #app {
+  // height: 100%;
   position: relative;
   z-index: 0;
   overflow-x: hidden;

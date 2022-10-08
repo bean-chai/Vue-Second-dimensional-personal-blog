@@ -2,7 +2,7 @@
  * @Author: chaichai chaichai@cute.com
  * @Date: 2022-09-26 15:50:49
  * @LastEditors: chaichai chaichai@cute.com
- * @LastEditTime: 2022-09-28 17:24:28
+ * @LastEditTime: 2022-10-08 08:28:48
  * @FilePath: \blog3.0\src\components\footerView\index.vue
  * @Description: 
  * 
@@ -38,10 +38,6 @@ export default {
     let myTimeDisplay = setInterval(() => {
       this.getNowFormatDate(); //每秒更新一次时间
     }, 1000);
-    console.log(busuanzi_value_site_pv);
-  },
-  destroyed() {
-    console.log(busuanzi_value_site_pv);
   },
   data() {
     return {

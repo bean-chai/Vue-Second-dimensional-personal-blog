@@ -2,7 +2,7 @@
  * @Author: chaichai chaichai@cute.com
  * @Date: 2022-09-26 08:42:49
  * @LastEditors: chaichai chaichai@cute.com
- * @LastEditTime: 2022-09-28 16:34:00
+ * @LastEditTime: 2022-10-08 16:04:23
  * @FilePath: \blog3.0\src\components\bannerView\index.vue
  * @Description: 
  * 
@@ -22,14 +22,27 @@
             mode="horizontal"
             @select="handleSelect"
             collapse-transition
-            background-color="rbg(255,255,255,0)"
+            background-color="#0000001D"
             router
-            active-text-color="#fff"
             text-color="#fff"
+            menu-trigger="click"
           >
             <el-menu-item index="about">首页</el-menu-item>
             <el-menu-item index="blog">博客</el-menu-item>
-            <el-menu-item index="friend">友链</el-menu-item>
+            <el-menu-item index="back">后台</el-menu-item>
+            <el-submenu index="2">
+              <template slot="title">友链</template>
+              <el-menu-item index="2-1" class="friendList"
+                ><img src="@/assets/baimeng.png" alt="" class="friendIco" /><a
+                  href="https://marrydream.top/"
+                  style="color: #fff"
+                  >百梦</a
+                ></el-menu-item
+              >
+              <el-menu-item index="2-2" class="friendList">
+                <a href="#" style="color: #fff">虚位以待~</a>
+              </el-menu-item>
+            </el-submenu>
           </el-menu>
         </div>
         <div class="centerTile">{{ titleName }}</div>
@@ -73,12 +86,15 @@ export default {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.4);
+
   .navBox {
     height: 60px;
     display: flex;
     flex-wrap: nowrap;
+    line-height: 60px;
     justify-content: space-between;
-    padding: 15px 30px 0 30px;
+    padding: 20px 35px 0 35px;
+
     .topTitle {
       width: 300px;
       text-align: left;
@@ -88,13 +104,17 @@ export default {
       text-transform: uppercase;
     }
     .el-menu {
-      height: 60px;
-      background: rgb(0, 0, 0, 0);
+      background-color: rgb(0, 0, 0, 0) !important;
       border: 0px;
     }
+
     .el-menu-item {
-      color: #fff;
       font-size: 18px;
+      font-weight: 600;
+      background-color: rgb(0, 0, 0, 0) !important;
+    }
+    .el-submenu__title {
+      font-size: 18px !important;
       font-weight: 600;
       background-color: rgb(0, 0, 0, 0) !important;
     }
@@ -114,5 +134,19 @@ export default {
     font-size: 35px;
     color: #fff;
   }
+}
+</style>
+<style>
+.friendIco {
+  display: inline-block;
+  width: 25px;
+  margin: 0 3px;
+  vertical-align: middle;
+}
+.friendList {
+  height: 80px !important;
+  line-height: 80px !important;
+  margin: 5px auto;
+  text-align: center;
 }
 </style>

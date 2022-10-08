@@ -10,6 +10,7 @@
     "amfe-flexible": "^2.2.1",
     "animate.css": "^4.1.1",
     "core-js": "^3.8.3",
+    "element-tiptap": "^1.27.1",
     "element-ui": "^2.15.10",
     "postcss-pxtorem": "^6.0.0",
     "save": "^2.9.0",

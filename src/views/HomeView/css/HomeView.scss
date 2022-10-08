@@ -25,7 +25,7 @@
   }
 
   .ahtuorName {
-    font-size: 30px;
+    font-size: 31px;
     margin-top: 15px;
     letter-spacing: 10px;
     font-weight: 550;
@@ -79,8 +79,9 @@
     }
 
     .btnBox {
-      width: 350px;
-      margin: 0 auto;
+    //   width: 350px;
+        width: 50%;
+    margin: 0 auto;
       display: flex;
       justify-content: space-between;
       margin-top: 40px;
@@ -122,7 +123,7 @@
   }
 
   .continueBox {
-    width: 100px;
+    width: 120px;
     margin: 0 auto;
     margin-top: 30px;
     display: flex;

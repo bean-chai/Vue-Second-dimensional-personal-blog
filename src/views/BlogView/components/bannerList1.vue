@@ -3,11 +3,12 @@
     <div class="titleBox">
       <div class="titleName">Vue专区</div>
       <div class="bannerBox">
-        <slider ref="slider" :options="options" @slide="slide">
+        <slider ref="slider" :options="options" @slide="slider">
           <slideritem
             v-for="(item, index) in someList"
             :key="index"
             :style="item.style"
+            @click="clickSlider(item,index)"
             >{{ item.html }}<br />
             {{ item.athuer }}<br />
             {{ item.creatTime }}</slideritem
@@ -73,11 +74,9 @@ export default {
     };
   },
   methods: {
-    methods: {
-      slide(data) {
-        console.log(data);
+      slider(data) {
+        console.log(data,'silder1');
       },
-    },
   },
 };
 </script>
@@ -90,21 +89,18 @@ export default {
   height: 800px;
   box-shadow: 0 1px 10px rgb(0 0 0 / 10%);
   margin-bottom: 20px;
-  // background: pink;
   .titleBox {
-    width: 30%;
+    width: 35%;
     height: 100%;
-    // border-right: 2px solid #000;
-    // background: orange;
     text-align: center;
     .titleName {
       margin: 0 auto;
+      letter-spacing: 2px;
       width: 80%;
-      font-size: 24px;
+      font-size: 22px;
       height: 50px;
       line-height: 50px;
       font-weight: 550;
-      // background: yellow;
     }
 
     .bannerBox {
@@ -120,7 +116,7 @@ export default {
     }
   }
   .contentBox {
-    width: 70%;
+    width: 65%;
     height: 100%;
     background: skyblue;
   }

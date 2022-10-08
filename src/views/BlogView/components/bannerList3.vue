@@ -3,7 +3,7 @@
     <div class="titleBox">
       <div class="titleName">疑难杂症专区</div>
       <div class="bannerBox">
-        <slider ref="slider" :options="options" @slide="slide">
+        <slider ref="slider" :options="options" @slide="slider">
           <slideritem
             v-for="(item, index) in someList"
             :key="index"
@@ -73,11 +73,9 @@ export default {
     };
   },
   methods: {
-    methods: {
-      slide(data) {
-        console.log(data);
+      slider(data) {
+        console.log(data,'silder3');
       },
-    },
   },
 };
 </script>
@@ -90,11 +88,9 @@ export default {
   height: 800px;
   box-shadow: 0 1px 10px rgb(0 0 0 / 10%);
   margin-bottom: 20px;
-  // background: pink;
   .titleBox {
-    width: 30%;
+    width: 35%;
     height: 100%;
-    // background: orange;
     text-align: center;
     .titleName {
       margin: 0 auto;
@@ -103,9 +99,7 @@ export default {
       height: 50px;
       line-height: 50px;
       font-weight: 550;
-      // background: yellow;
     }
-
     .bannerBox {
       width: 100%;
       height: 750px;
@@ -119,7 +113,7 @@ export default {
     }
   }
   .contentBox {
-    width: 70%;
+    width: 65%;
     height: 100%;
     background: skyblue;
   }

@@ -7,7 +7,7 @@
       <div class="titleName">React专区</div>
 
       <div class="bannerBox">
-        <slider ref="slider" :options="options" @slide="slide">
+        <slider ref="slider" :options="options" @slide="slider">
           <slideritem
             v-for="(item, index) in someList"
             :key="index"
@@ -74,11 +74,9 @@ export default {
     };
   },
   methods: {
-    methods: {
-      slide(data) {
-        console.log(data);
+      slider(data) {
+        console.log(data,'silder2');
       },
-    },
   },
 };
 </script>
@@ -93,7 +91,7 @@ export default {
   margin-bottom: 20px;
   // background: pink;
   .titleBox {
-    width: 30%;
+    width: 35%;
     height: 100%;
     text-align: center;
     .titleName {
@@ -119,7 +117,7 @@ export default {
     }
   }
   .contentBox {
-    width: 70%;
+    width: 65%;
     height: 100%;
     background: skyblue;
   }

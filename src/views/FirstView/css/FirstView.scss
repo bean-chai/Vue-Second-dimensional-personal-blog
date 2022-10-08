@@ -2,7 +2,7 @@
  * @Author: chaichai chaichai@cute.com
  * @Date: 2022-09-28 09:53:31
  * @LastEditors: chaichai chaichai@cute.com
- * @LastEditTime: 2022-09-28 09:54:46
+ * @LastEditTime: 2022-10-08 09:51:14
  * @FilePath: \blog3.0\src\views\FirstView\css\FirstView.scss
  * @Description: 
  * 
@@ -38,8 +38,12 @@
       right: 286px;
       box-shadow: 0 1px 10px rgb(0 0 0 / 10%);
       width: 335px;
-      height: 55vh;
+    //   height: 55vh;
       background: #fff;
+      .el-avatar--circle{
+        width: 100px!important;
+        height: 100px!important;
+      }
 
       .bottomImg {
         display: block;
@@ -49,7 +53,7 @@
       .asideImg {
         position: relative;
         width: 100%;
-        height: 15vh;
+        height: 140px;
         //侧边栏顶部图片--固定位置后
         background: url("http://chaichaiimage.oss-cn-hangzhou.aliyuncs.com/blog3.0/bg12.jpg");
         background-position: 0 -70px;
@@ -91,7 +95,10 @@
       box-shadow: 0 1px 10px rgb(0 0 0 / 10%);
       width: 25%;
       background: #fff;
-
+      .el-avatar--circle{
+        width: 100px!important;
+        height: 100px!important;
+      }
       .bottomImg {
         display: block;
         width: 100%;
@@ -100,7 +107,7 @@
       .asideImg {
         position: relative;
         width: 100%;
-        height: 15vh;
+        height: 140px;
         // 侧边栏顶部图片--原始
         background: url("http://chaichaiimage.oss-cn-hangzhou.aliyuncs.com/blog3.0/bg12.jpg");
         background-position: 0 -70px;

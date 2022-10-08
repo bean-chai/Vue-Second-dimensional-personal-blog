@@ -2,7 +2,7 @@
  * @Author: chaichai chaichai@cute.com
  * @Date: 2022-09-26 08:29:56
  * @LastEditors: chaichai chaichai@cute.com
- * @LastEditTime: 2022-09-28 08:46:17
+ * @LastEditTime: 2022-10-08 15:02:33
  * @FilePath: \blog3.0\src\App.vue
  * @Description: 
  * 
@@ -44,7 +44,7 @@ export default {
   margin: 0;
   padding: 0;
   user-select: none;
-  //  text-decoration: none;
+   text-decoration: none;
   list-style: none;
 }
 //解决抖动

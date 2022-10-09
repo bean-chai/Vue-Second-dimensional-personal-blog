@@ -2,7 +2,7 @@
  * @Author: chaichai chaichai@cute.com
  * @Date: 2022-09-26 08:42:49
  * @LastEditors: chaichai chaichai@cute.com
- * @LastEditTime: 2022-10-08 16:04:23
+ * @LastEditTime: 2022-10-09 10:39:13
  * @FilePath: \blog3.0\src\components\bannerView\index.vue
  * @Description: 
  * 
@@ -54,6 +54,7 @@
 
 <script>
 export default {
+  name:'bannerView',
   props: {
     imgUrl: {
       required: true,

@@ -32,6 +32,7 @@
 
 <script>
 export default {
+  name:'dialogView',
   props: {
     dialogTitle: {
       type: String,

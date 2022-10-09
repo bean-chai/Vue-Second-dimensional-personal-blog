@@ -56,6 +56,7 @@ import "./css/FirstView.scss";
 import "highlight.js/styles/github.css";
 import "github-markdown-css";
 export default {
+  name:'FirstView',
   components: { bannerView, markdown, footerView },
   mounted() {
     window.addEventListener("scroll", this.scrollToTop);

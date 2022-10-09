@@ -27,6 +27,7 @@ import bannerList1 from "./components/bannerList1.vue";
 import bannerList2 from "./components/bannerList2.vue";
 import bannerList3 from "./components/bannerList3.vue";
 export default {
+  name:'BlogView',
   components: { bannerView, footerView, bannerList1, bannerList2, bannerList3 },
   data() {
     return {

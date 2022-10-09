@@ -2,7 +2,7 @@
  * @Author: chaichai chaichai@cute.com
  * @Date: 2022-09-28 16:41:52
  * @LastEditors: chaichai chaichai@cute.com
- * @LastEditTime: 2022-09-28 16:50:45
+ * @LastEditTime: 2022-10-09 10:36:57
  * @FilePath: \blog3.0\src\views\HomeView\components\typewriter.vue
  * @Description: 
  * 
@@ -30,7 +30,7 @@ export default{
 			start(){
 				//将获取到的字符串切割成数组
 				this.strArr = this.str.split("");
-				//循环将单个的文字 延时追加到words数组中
+				//循环将单个的文字 延时追加到 words数组中
 				for(var i = 0;i<this.strArr.length;i++){
 					var res = setTimeout(this.write(i),i * 150);
 				}

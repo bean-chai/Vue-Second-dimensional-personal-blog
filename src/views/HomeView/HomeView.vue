@@ -2,7 +2,7 @@
  * @Author: chaichai chaichai@cute.com
  * @Date: 2022-09-26 08:29:56
  * @LastEditors: chaichai chaichai@cute.com
- * @LastEditTime: 2022-09-28 16:54:11
+ * @LastEditTime: 2022-10-09 09:08:17
  * @FilePath: \blog3.0\src\views\HomeView\HomeView.vue
  * @Description: 
  * 
@@ -49,7 +49,7 @@
           @resetPopupData="resetPopupData"
           @submitPopupData="submitPopupData"
           @handleClose="handleClose"
-          :popupWidth="'550px'"
+          :popupWidth="'250px'"
         >
           <!-- 弹窗内容 -->
           <div class="go433Box">
@@ -57,7 +57,7 @@
             ><a href="https://github.com/4-433" target="_blank">点击前往</a
             ><br />
             <span>Chaichai👉 </span
-            ><a href="https://github.com/bbxx123" target="_blank">点击前往</a>
+            ><a href="https://github.com/bbxx123" target="_blank">点击前往</a><br />
             <img src="@/assets/fenhuli.gif" alt="" class="go433Img" />
           </div>
         </Popup>
@@ -88,7 +88,7 @@ export default {
       words: [
         "嗨 欢迎来到chaichai.top",
         "励志成为优秀且花里胡哨的程序员，并在努力奋斗	",
-        " CQUCC-4-433正在找寻志同道合的小伙伴，欢迎前端、后端、UI加入我们！",
+        "CQUCC-4-433正在找寻志同道合的小伙伴，欢迎前端、后端、UI加入我们！",
       ],
       dialogVisible: false, // 弹框的出现与否
       dialogTitle: "GitHub", //弹窗标题
@@ -131,6 +131,7 @@ export default {
       this.$alert("柴柴：2787922490(はじかの)", "QQ", {
         confirmButtonText: "确定",
       });
+  
     },
   },
 };

@@ -9,13 +9,15 @@
 </p>
 
 <h3 align="center">二次元办事，你放心😋</h3>
-<center>一个 Vue.js 的基于 [element-ui] 开发的 二次元 个人博客模板</center>
+<p align="center">一个 Vue.js 的基于 [element-ui] 开发的 二次元 个人博客模板</p>
 
 <p align="center">
 易上手，可扩展性强，设计简洁
 </p>
 
+<p align="center">
 🔊 [CQUCC-4-433](https://github.com/4-433) 正在找寻志同道合的小伙伴，欢迎前端、后端、UI加入我们！
+</p>
 
 #### ✨ **特色**
 

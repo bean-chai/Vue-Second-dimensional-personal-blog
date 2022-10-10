@@ -2,7 +2,7 @@
 <img alt="logo" src="https://chaichaiimage.oss-cn-hangzhou.aliyuncs.com/blog3.0/%E9%A5%BF%E4%BA%86%E4%B9%88%E5%BA%97%E9%93%BA%E5%A4%B4%E5%83%8F.jpeg">
 </p>
 <p align="center">
- 本项目已支援996ICU项目
+ 本项目已支援996ICU项目<br />
   <img alt="npm peer dependency version" src="https://img.shields.io/npm/dependency-version/element-tiptap/peer/vue?color=vue">
   <img alt="GitHub" src="https://img.shields.io/github/license/Leecason/element-tiptap">
    <a href="https://996.icu"><img src="https://img.shields.io/badge/link-996.icu-red.svg"></a>
@@ -13,6 +13,10 @@
 
 <p align="center">
 易上手，可扩展性强，设计简洁
+</p>
+
+<p align="center">
+💥说明：本项目目前还处于开发阶段，没有完工！没有完工！没有完工！
 </p>
 
 <p align="center">
@@ -51,6 +55,7 @@
    |    |    |    |-- HomeBanner.vue  #页面子组件
    |    |    |    |-- HomeHeader.vue  #页面子组件
    |    |    |    |-- …………
+   |    |    |-- index.scss  #页面样式文件
    |    |    |-- index.vue  #页面组件
    |    |-- …………
   ```

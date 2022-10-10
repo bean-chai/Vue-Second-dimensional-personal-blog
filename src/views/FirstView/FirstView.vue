@@ -2,12 +2,13 @@
  * @Author: chaichai chaichai@cute.com
  * @Date: 2022-09-26 08:29:56
  * @LastEditors: chaichai chaichai@cute.com
- * @LastEditTime: 2022-09-28 09:54:36
+ * @LastEditTime: 2022-10-10 17:13:00
  * @FilePath: \blog3.0\src\views\FirstView\FirstView.vue
- * @Description: 
+ * @Description:  [CQUCC-4-433](https://github.com/4-433) 正在找寻志同道合的小伙伴，欢迎前端、后端、UI加入我们！
  * 
  * Copyright (c) 2022 by CQUCC-4-433, All Rights Reserved. 
 -->
+
 <template>
   <div class="aboutBox">
     <bannerView
@@ -40,7 +41,7 @@
       </div>
       <div v-if="btnFlag" class="go-top" @click="backTop">
         <!-- 返回顶部图标 -->
-        <img src="@/assets/backTop.png" alt="" class="backTopbtn" />
+        <img src="@/assets/backTop.png" alt="" class="backTopbtn" /> 
       </div>
     </div>
     <footerView></footerView>
@@ -100,6 +101,7 @@ export default {
         document.documentElement.scrollTop ||
         document.body.scrollTop;
       that.scrollTop = scrollTop;
+      that.locked = that.btnFlag = that.scrollTop > that.bannerH
       if (that.scrollTop > that.bannerH) {
         that.locked = true;
         that.btnFlag = true;

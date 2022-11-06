@@ -19,7 +19,7 @@ import 'element-ui/lib/theme-chalk/index.css';
 import 'element-tiptap/lib/index.css';
 import animated from 'animate.css'
 
-Vue.use(animated)
+// Vue.use(animated)
 Vue.use(ElementUI);
 
 Vue.use(ElementTiptapPlugin, {

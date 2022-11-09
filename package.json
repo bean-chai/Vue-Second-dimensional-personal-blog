@@ -2,7 +2,7 @@
   "name": "blog3.0",
   "version": "0.2.0",
   "description": "二次元个人博客模板",
-  "author": "柴柴", 
+  "author": "柴柴",
   "private": false,
   "scripts": {
     "chaichai": "vue-cli-service serve",

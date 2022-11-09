@@ -2,7 +2,7 @@
  * @Author: chaichai chaichai@cute.com
  * @Date: 2022-09-26 08:29:56
  * @LastEditors: chaichai chaichai@cute.com
- * @LastEditTime: 2022-10-09 09:08:17
+ * @LastEditTime: 2022-11-09 10:38:10
  * @FilePath: \blog3.0\src\views\HomeView\HomeView.vue
  * @Description: 
  * 
@@ -65,7 +65,7 @@
       <!-- 页脚 -->
       <div class="footerBox">
         &copy; 2022 Chaichai 版权所有<br />
-        滇ICP备2022000365号
+        <a href="https://beian.miit.gov.cn/" style="color: #fff" target="_blank">滇ICP备2022000365号</a>
       </div>
     </div>
   </div>
@@ -131,7 +131,6 @@ export default {
       this.$alert("柴柴：2787922490(はじかの)", "QQ", {
         confirmButtonText: "确定",
       });
-  
     },
   },
 };

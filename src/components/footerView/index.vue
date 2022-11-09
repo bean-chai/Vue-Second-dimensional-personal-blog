@@ -2,7 +2,7 @@
  * @Author: chaichai chaichai@cute.com
  * @Date: 2022-09-26 15:50:49
  * @LastEditors: chaichai chaichai@cute.com
- * @LastEditTime: 2022-10-08 08:28:48
+ * @LastEditTime: 2022-11-09 10:40:24
  * @FilePath: \blog3.0\src\components\footerView\index.vue
  * @Description: 
  * 
@@ -21,8 +21,7 @@
       网站苟活 {{ day }}天 {{ h }}小时 {{ min }}分钟 {{ sec }}秒<br />
       power by 🧡Chaichai🧡<br />
       开源协议 MIT License <br />
-
-      滇ICP备2022000365号
+      <a href="https://beian.miit.gov.cn/" style="color: #fff" target="_blank">滇ICP备2022000365号</a>
     </div>
   </div>
 </template>
